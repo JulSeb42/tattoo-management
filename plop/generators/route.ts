@@ -94,7 +94,7 @@ export default (plop: NodePlopAPI) => {
             {
                 type: "modify",
                 path: `${BASE_CLIENT_PATH}/api/index.ts`,
-                template: 'export * from "./{{ kebabCase name }}.service"\n$1',
+                template: 'export * from "api/{{ kebabCase name }}.service"\n$1',
                 pattern: /(\/\* Prepend - DO NOT REMOVE \*\/)/g,
             },
         ],

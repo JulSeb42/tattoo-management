@@ -6,7 +6,9 @@ const SERVER_PATH_ROOTS = {
     AUTH: "/auth",
     UPLOADER: "/uploader",
     USERS: "/users",
-    /* Prepend path root - DO NOT REMOVE */
+    SUPPLY: "/supply",
+	APPOINTMENT: "/appointment",
+	/* Prepend path root - DO NOT REMOVE */
 }
 
 export const SERVER_PATHS = {
@@ -37,5 +39,15 @@ export const SERVER_PATHS = {
         EDIT_PASSWORD: (id = ":id") => `/edit-password/${id}`,
         DELETE_ACCOUNT: (id = ":id") => `/delete-account/${id}`,
     },
-    /* Prepend server path - DO NOT REMOVE */
+    SUPPLY: {
+		ROOT: SERVER_PATH_ROOTS.SUPPLY,
+		ALL_SUPPLIES: "/all-supply",
+		GET_SUPPLY: (id = ":id") => `/supply/${id}`,
+	},
+	APPOINTMENT: {
+		ROOT: SERVER_PATH_ROOTS.APPOINTMENT,
+		ALL_APPOINTMENTS: "/all-appointment",
+		GET_APPOINTMENT: (id = ":id") => `/appointment/${id}`,
+	},
+	/* Prepend server path - DO NOT REMOVE */
 }

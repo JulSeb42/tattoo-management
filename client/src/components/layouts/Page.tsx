@@ -1,7 +1,7 @@
 /*=============================================== Page ===============================================*/
 
 import { PageLoading, Wrapper, Main } from "@julseb-lib/react"
-import { Header } from "./Header"
+import { Header } from "./Header/Header"
 import { BaseLayout, type IBaseLayout } from "./BaseLayout"
 import type { LibMainSize } from "@julseb-lib/react/types"
 
