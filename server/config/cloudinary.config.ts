@@ -16,7 +16,7 @@ const storage = new CloudinaryStorage({
     params: {
         // @ts-expect-error
         allowed_formats: ["jpg", "png", "svg"],
-        folder: "tattoo-supplies-manager",
+        folder: "tattoo-management",
     },
 })
 

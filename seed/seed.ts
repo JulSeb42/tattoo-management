@@ -21,7 +21,7 @@ const hash = bcrypt.hashSync(password, salt)
 
 const MONGODB_URI =
     process.env.MONGODB_URI ||
-    "mongodb://localhost/tattoo-supplies-manager"
+    "mongodb://localhost/tattoo-management"
 
 mongoose.connect(MONGODB_URI)
 
